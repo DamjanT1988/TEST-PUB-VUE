@@ -5,7 +5,7 @@ Syftet med uppgiften är att:
 * publicera till lämplig webbhost som inte är FTP-baserad.
 
 ## REPO-BESKRIVNING
-Repo består av rootkataloger och rootfiler för Vue-skapad SPA-applikation. Här finns utvecklingsfiler (src) och distributionsfiler (dist). I utvecklingsfiler finns komponenter (components) och view-filer (views) samt olika tillgångar (assets) som bilder. En router finns för att det är en Single Page Application (SPA) som kräver router för att navigera mellan sidor genom JavaScript.
+Repo består av rootkataloger och rootfiler för Vue-skapad SPA-applikation. Här finns utvecklingsfiler (src) och distributionsfiler (dist). I utvecklingsfiler finns komponenter (components) och view-filer (views) samt olika tillgångar (assets) som bilder. En router finns för att det är en Single Page Application (SPA) som kräver router för att navigera mellan sidor genom JavaScript. I repot finns ocksp Bootstrap-filer.
 
 ### APPLIKATIONEN
 SPA-applikation fungerar som ett minimalt persionligt bibliotek vilket lagrar spel som titel, publiceringsår och om spelat. Spelen kan också tas bort från den lista som visar alla lagrade spel.

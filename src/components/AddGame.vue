@@ -2,21 +2,31 @@
     <!-- 22. skapa formulär för inmatning av data-->
     <!-- 22-2 lägg till händelselyssnare för att fånga submit/data (prevent default = ej laddas om)-->
     <form @submit.prevent="addGame()" >
-        <label for="addGame">Spelets titel:</label>
+        <label for="addGame" class="font-weight-bold">Skriv spelets titel:</label>
+        <br><br>
         <!-- 22-1. länka inmatningsfält med "game" i data (dynamiskt)-->
-        <input v-model="title" type="text">
-
+        <input v-model="title" type="text" class="form-control-lg">
+        <br><br>
+        
         <!-- 24. lägg till övrigt-->
-        <label for="addGame">Spelets publiceringsår:</label>
-        <input v-model="year" type="number" placeholder="xxxx">
+        <label for="addGame" class="font-weight-bold">Ange spelets publiceringsår:</label>
+        <br><br>
+        <input v-model="year" type="number" placeholder="xxxx" class="form-control-lg">
+        <br><br>
+
+        <label for="addGame" class="font-weight-bold">Har du spelat det?</label>
+        <br><br>
         
-        <label for="addGame">Spelat?</label>
+        <div class="form-check-inline">
         <input v-model="played" type="radio" id="playedyes" value="1">
-        <label for="playedyes">Ja</label>
+        <label for="playedyes" class="form-control-lg">Ja</label>
+        <br>
         <input v-model="played" type="radio" id="playedyno" value="0">
-        <label for="playedno">Nej</label>
+        <label for="playedno" class="form-control-lg">Nej</label>
+        </div>
+        <br><br>
         
-        <input type="submit" value="Lägg till">
+        <input type="submit" value="Lägg till" class="btn btn-info">
     </form>
 </template>
 

@@ -1,25 +1,28 @@
 <!-- 4. skapa Header-fil med templatekod--> 
 
 <template>
-    <header>
-        <div class="container">
-            <img src="../assets/BANNERBILD.jpg">
-            <h1>SPELBIBLIOTEKTJÄNST</h1>
+    <header class="row">
+        <div>
             <!-- 5. skapa huvudmeny-->
-            <nav>
-                <ul>
+            <nav class="navbar fixed-top navbar-dark bg-dark bg-gradient d-flex justify-content-center">
+                
                     <!-- 8. skapa länker (känner av RouterLink redan)-->
-                    <li>
-                        <RouterLink to="/">Start</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink to="/gamelibrary">Bibliotek</RouterLink>                        
-                    </li>
-                    <li>
-                        <RouterLink to="/information">Information</RouterLink>
-                    </li>
-                </ul>
+                    <a>
+                        <RouterLink to="/" class="m-3 btn btn-light text-decoration-none">Start</RouterLink>
+                    </a>
+                    <a>
+                        <RouterLink to="/gamelibrary" class="m-3 btn btn-light text-decoration-none">Bibliotek</RouterLink>                        
+                    </a>
+                    <a>
+                        <RouterLink to="/information" class="m-3 btn btn-light text-decoration-none">Information</RouterLink>
+                    </a>
+               
             </nav>
+            <br><br><br><br><br>
+            <h1 class="font-weight-bolder text-center ">SPELBIBLIOTEKSTJÄNST</h1>
+            <br>
+            <img src="../assets/BANNERBILD.jpg" class="img-fluid">
+            <br>
         </div>
     </header>
 </template>
@@ -36,8 +39,3 @@
     }
 </script>
 
-<!-- 11. CSS i header-->
-<style scoped>
-
-
-</style>

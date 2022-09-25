@@ -1,6 +1,15 @@
 <template>
     <!-- 1. skapa en ny view-fil-->
-    <h2>SPELBIBLIOTEK</h2>
+    <div class="container text-center">
+        <br>
+    <h2>LÄGG TILL</h2>
+    <br>
+    <p>
+        Lägg till spel nedan till din personliga spelbibliotek. 
+        <br>För att ta bort spel, klicka på spelens namn.
+        <br>Spelbiblioteket syns längre ner på sidan.
+    </p>
+        <br>
     <!-- 13-1. lägg till i HTML-->
     <!-- 15. loopa igenom array med objekt-->
     <!-- 18-1. koppla med barnkomponent deleteGame & instruera funktion att köras vid händelse
@@ -9,6 +18,7 @@
     <!-- 23-2 ladda om listan från barnkomponent-->
     <AddGame @addedGame="getGames()"/>
     <ListGames @deleteGame="deleteGame(game.id)" v-for="game in games" :game="game" :key="game.id"/>
+    </div>
 </template>
 
 <script>
