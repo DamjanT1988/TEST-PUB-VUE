@@ -1,8 +1,5 @@
 <!-- 12. lägg till bibliotekfunktioner-->
 <template>
-    <br>
-    <h2>DITT SPELBIBLIOTEK:</h2>
-    <br>
     <!-- 18. händelselyssnare för DELETE, genom ett EMIT mot föräldrarkomponent-->
     <article @click="$emit('deleteGame')">
        <h3> {{ game.title }} </h3>

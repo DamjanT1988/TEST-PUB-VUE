@@ -26,7 +26,7 @@
         </div>
         <br><br>
         
-        <input type="submit" value="Lägg till" class="btn btn-info">
+        <input type="submit" value="Lägg till" class="btn btn-dark">
     </form>
 </template>
 
